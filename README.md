@@ -20,10 +20,9 @@ we grow into Asia thought leaders and a world class development firm.
 Clients will then naturally engage us over other competitors despite our premium fees.
 
 ## Who We Are
-```
-ar·ti·san /ärdəzən/: 
-  a worker in a skilled trade, especially one that involves making things by hand.
-```
+> ### ar·ti·san 
+>   _noun_  
+>   a worker in a skilled trade, especially one that involves making things by hand.
 
 We are no different from a coffee barista or a carpenter who rely on their skill and experiences to create a beautiful and functional coffee or chair for their customer.
 
