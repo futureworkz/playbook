@@ -171,3 +171,5 @@ Some basic rules we practise are:
 - Never push project source code to public repository
 - We can share snippets of code but not all of the code with other parties
 - We can discuss what we learn with others but never reveal exactly how it works
+
+_(to be continued)_
