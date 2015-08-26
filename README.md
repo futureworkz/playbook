@@ -133,7 +133,6 @@ We don’t have test case for everything but we definitely have test cases to co
 ### Don’t Repeat Yourself (DRY)
 We remove any duplications in our code, files and any other relevant stuff. Duplication is a consequence of lazy and untidy coding style. It is a mark of messy mind. We should be disciplined to refactor our code to remove duplications so as to ensure that our code is clean and easy to read.
 
-
 ### Naming Reveals Intention
 Ruby is an amazingly expressive programming language. We avoid using comments in our code and instead, let our code be clear enough to express what it does. Ruby allows us to do this and we should make full use of it. We put deliberation into the naming of our variables, classes, files, methods, etc so that it expresses what it does clearly. This distills our intention in our code and create better quality code.
 
