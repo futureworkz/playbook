@@ -174,7 +174,16 @@ Some basic rules we practise are:
 - We can discuss what we learn with others but never reveal exactly how it works
 
 ## Role of Product Owner (a.k.a. our client)
-*TODO: Talk about how we expect client to behave and positioning*
+The product owner is the person who is in charge of making the decision for the app. This is generally our client. In the event where our client has a team of more than one person, we would ask for a single point of contact from the client's team and that person will be the product owner.
+
+Ideally, the product owner should be available via mobile or online during development hours. Practically, we ask for at least one hour a day with us. 
+
+The product owner is expected to:
+- Clarify requirements
+- Test and approve/reject developed stories/design
+- Guide us in decisions on the app business direction
+
+We believe client should know how to manage their own IT assets so we require the product owner to register any needed services by themselves such as Amazon Web Services, Google Analytics, etc.
 
 ## How We Start Project
 *TODO: Talk about how we start every project*
