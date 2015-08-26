@@ -80,18 +80,18 @@ Primary main responsibilities:
 - To ensure a growing working environment in Futureworkz
 - To provide vision and direction for Futureworkz
 
-Lawrence is the COO + CFO of Futureworkz
+Lawrence is the COO + CFO of Futureworkz.
 Primary main responsibilities:
 - To manage the financial status of Futureworkz
 - To manage the Vietnam operations
 
-Changs is the CMO of Futureworkz
+Changs is the CMO of Futureworkz.
 Primary main responsibilities:
 - To develop new business units
 - To provide IT and business consultation to clients
 - To ensure a viable marketing and sales process
 
-Sujata is the Project Manager of Futureworkz
+Sujata is the Project Manager of Futureworkz.
 Primary main responsibilities:
 - To ensure project development is on track
 - To resolve project development conflicts
@@ -146,7 +146,7 @@ This is never meant to be an exhaustive list. Code quality is a life-long pursue
 ## Problem Resolution
 If stuck, google by yourself for 10 mins.
 If no solution found, ask someone.
-If a solution is found, implement it but don’t waste more than 30 minutes to implement the solution (it may not be the correct solution)
+If a solution is found, implement it but don’t waste more than 30 minutes to implement the solution (it may not be the correct solution).
 If you found a really great solution, share it!
 
 ## 12 Steps Development Flow For Coders
