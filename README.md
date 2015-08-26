@@ -172,3 +172,9 @@ Some basic rules we practise are:
 - Never push project source code to public repository
 - We can share snippets of code but not all of the code with other parties
 - We can discuss what we learn with others but never reveal exactly how it works
+
+## Role of Product Owner (a.k.a. our client)
+*TODO: Talk about how we expect client to behave and positioning*
+
+## How We Start Project
+*TODO: Talk about how we start every project*
