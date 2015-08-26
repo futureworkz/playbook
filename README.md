@@ -166,6 +166,8 @@ We follow a simple step-by-step flow to complete our project:
 ## Intellectual Property Security
 Client hires us to develop their best ideas. We should ensure that the code and other intellectual properties are not leaked to the public or worse, client’s competitors.
 
+While it is important to be secure, it should be balanced off with productivity and efficiency. We believe in our employee's integrity and professionalism. As such, we maximise productivity while keeping the intellectual property secured.
+
 Some basic rules we practise are:
 - Never push project source code to public repository
 - We can share snippets of code but not all of the code with other parties
