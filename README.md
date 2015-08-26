@@ -213,7 +213,7 @@ We will update the Readme.md to give a general overview of the app. The purpose 
 
 Note that the Readme is only an overview and the documentation of the app is in our test cases which you can see by running `rspec -f d`.
 
-*TODO: Give an example Readme.md*
+A sample README.md file can be [found here](samples/sample-README.md).
 
 ### Collection of Sensitive Information
 We will do a final check that all sensitive information such as login, API access tokens, etc are kept in a secured but accessible location. 
