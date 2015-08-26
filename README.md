@@ -186,7 +186,19 @@ The product owner is expected to:
 We believe client should know how to manage their own IT assets so we require the product owner to register any needed services by themselves such as Amazon Web Services, Google Analytics, etc.
 
 ## How We Start Project
-*TODO: Talk about how we start every project*
+After client has signed our quotation, a meeting (known as inception) is conducted before development can start.
+
+Inception is a two day meeting in which all stakeholders gain alignment in the team. The stakeholders typically includes client, end-users, designer, coder, project manager, and consultant.
+
+At the end of the inception, we will have the initial stories to start development and design.
+
+We use PivotalTracker.com to track all the progress of the stories. We prefer it because it allows acceptance and rejection of the stories clearly.
+
+We begin with wireframing the user layout and interface. We focus on the most important workflow first and the stories in swim lane #1. After the wireframes, we will flesh it out with the visual asthetic design.
+
+Development begins on the highest business value stories or the riskest stories. We want to deliver high value stories to client first instead of wasting time on low value stories.
+
+Developing the main workflow or the highest business value stories first will validate the idea of the project quickly and easily.
 
 ## Project Closure
 We start every project with a great inception meeting and we should end every project with a proper closure procedure. 
