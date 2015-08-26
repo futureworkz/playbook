@@ -178,3 +178,47 @@ Some basic rules we practise are:
 
 ## How We Start Project
 *TODO: Talk about how we start every project*
+
+## Project Closure
+We start every project with a great inception meeting and we should end every project with a proper closure procedure. 
+
+The project closure is to ensure:
+- All important information such as the source code, credentials, etc are accounted and stored properly
+- The project can be re-deployed easily again in another environment for further development, maintenance or bug fixing
+- If we open the project again in the future, there will be enough information for us to start work in the minimum amount of time
+
+Our project closure procedure should be completed in one man day.
+
+### Ensure Production Services Are Running
+For production sites, there are several 3rd party services which we highly recommend our clients to use. Most of them are free (at least for low volume). Client should sign up the 3rd party services themselves and then pass us the account to integrate for them.
+
+Services         | Website                          | Price | Why We Recommend Them
+-----------------|----------------------------------|-------|----------------------
+Google Analytics | http://www.google.com/analytics/ | Free  | Google Analytics is a freemium web analytics service offered by Google that tracks and reports website traffic.
+New Relic        | http://newrelic.com/             | Free (for Lite) | New Relic collects all the data and performance of your software. If Google Analytics is frontend, New Relic is your backend.
+Gemnasium        | http://gemnasium.com/            | Free  | Gemnasium parses your project's dependencies and notifies you when new versions are released or they need to be updated.
+
+### Code Review
+If there are more man days available and client approves, we will do a final code review on the entire code to see if we can improve the code quality further.
+
+This stage is optional since code review is done at various lifecycle of the project development and subjected to client's approval.
+
+### Security Update
+We will update all the gems and dependencies to the latest version so that the app has the latest security patches. For Ruby on Rails web app, this means running `bundle update`
+
+We will then deploy the latest updated dependencies to the staging and production to ensure that it is running smoothly.
+
+### Readme.md
+We will update the Readme.md to give a general overview of the app. The purpose is to reduce the ramp up time for the next developer to maintain or develop the app.
+
+Note that the Readme is only an overview and the documentation of the app is in our test cases which you can see by running `rspec -f d`.
+
+*TODO: Give an example Readme.md*
+
+### Collection of Sensitive Information
+We will do a final check that all sensitive information such as login, API access tokens, etc are kept in a secured but accessible location. 
+
+Our system administrator will do a full deployment separately to ensure that all required information is present.
+
+### See You Again Email
+We will send all the source code and any other information to the client using wetransfer.com or slow mail in a CD. We will also send a nice see you again email together with a discussion on maintenance package.
