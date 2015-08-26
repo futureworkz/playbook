@@ -222,3 +222,8 @@ Our system administrator will do a full deployment separately to ensure that all
 
 ### See You Again Email
 We will send all the source code and any other information to the client using wetransfer.com or slow mail in a CD. We will also send a nice see you again email together with a discussion on maintenance package.
+
+## Keep Yourself Updated
+We are continuously improving and changing - so is this playbook.
+
+To keep yourself updated with this playbook, you can star this repository and you will be able to receive updates on this playbook.
