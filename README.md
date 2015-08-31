@@ -139,6 +139,9 @@ Ruby is an amazingly expressive programming language. We avoid using comments in
 ### Single Responsibility Principle
 Every class and method should only do one thing. We should not lump every logic and responsibility into a God class or a super method. This makes code difficult to understand and hard to change.
 
+### Test Coverage
+Every critical code must be covered with a test case or more. Test case ensures that our app is working. This is even more important when we are collaborating with other developers and making continuous changes to the source code.
+
 ### Others
 This is never meant to be an exhaustive list. Code quality is a life-long pursue. We strive to learn more about refactoring, design patterns and workflows to improve our skills.
 
