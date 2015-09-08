@@ -123,6 +123,9 @@ We do not believe in rushing for project and working overtime. We believe in wor
 
 Software requires good brains to create good codes and good processes. Working overnight destroy productivity, happiness and quality. Why should we produce low quality product for our clients?
 
+## Dress Code
+Dress as you like - nudes are welcome too.
+
 ## Coding Standard
 We have high regards for code quality in Futureworkz. We would rather spend more time to develop a better quality codes than rushing for more codes and for more features.
 
