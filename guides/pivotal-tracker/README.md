@@ -5,11 +5,11 @@ A project consists of many functions and features, we break down each requiremen
 
 The highlighted in the image below is called a Story
 
-![Fig 1](../../images/pivotal_tracker/story.png)
+![Fig 1](../../images/pivotal-tracker/story.png)
 
 As shown in the image, there are many Stories, each Story is a small requirement or function or feature from the project.
 
-![Fig 2] (../../images/pivotal_tracker/story-information.png)
+![Fig 2] (../../images/pivotal-tracker/story-information.png)
 
 ## 1. Story Name
 It is the name of the Story, it should be something straight-forward and easy to infer.
@@ -75,19 +75,19 @@ To tags the Story for easier grouping/searching purpose.
 ## Tasks
 When the features can be broken down into even smaller pieces, the team will input the smaller pieces into the tasks. As shown in the image below
 
-![Fig 3](../../images/pivotal_tracker/task.png)
+![Fig 3](../../images/pivotal-tracker/task.png)
 
 ## Activity
 This is the place where all the conversation is being track and record, include design image, content for the respective Story, why the Story is being reject, additional enhancement etc...
 
 Futureworkz strongly encourage all users to keep the communication to the commenting function of Activity. This makes the communication contextual, neat￼and tidy. Communication such as email or IM may cause potential miscommunication due to lack of context or improper format.
 
-![Fig 4](../../images/pivotal_tracker/activity.png)
+![Fig 4](../../images/pivotal-tracker/activity.png)
 
 ## Velocity
 Velocity is a measurement of how fast the team completes the stories.
 
-![Fig 5](../../images/pivotal_tracker/velocity.png)
+![Fig 5](../../images/pivotal-tracker/velocity.png)
 
 Velocity is the average points completed per week of the project. It calculates all the total points completed thus far and divide by the total number of weeks spent in the project.
 
