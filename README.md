@@ -1,7 +1,7 @@
 ## Purpose of Futureworkz Playbook
-Futureworkz is a company and like every company, Futureworkz needs profits in order to survive and grow. Futureworkz depends heavily on the people working in it in order to generate a sustainable profit.
-
 This document attempts to describe how Futureworkz employee behaves together as an organization - how we think, how we talk, how we respond, etc. The main purpose is to align everyone in Futureworkz to work together, be happier and spend more meaningful time in work while producing a profit to sustain and grow the company.
+
+Futureworkz is a company and like every company, Futureworkz needs profits in order to survive and grow. Futureworkz relies heavily on the people working in it in order to generate a sustainable profit.
 
 We strongly encourage any employee of Futureworkz to improve this playbook by submitting a pull request (for coders) or raise an issue (for non-coders).
 
