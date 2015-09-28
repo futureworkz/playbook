@@ -247,8 +247,12 @@ We will do a final check that all sensitive information such as login, API acces
 
 Our system administrator will do a full deployment separately to ensure that all required information is present.
 
+### Archiving Source Code, Design Files and other Assets
+We will archive the source code, design files and other assets into a common repository for easy retrieval later.
+This ensures that we will be able to service our client in events of maintenance or ad hoc jobs or future development.
+
 ### See You Again Email
-We will send all the source code and any other information to the client using wetransfer.com or slow mail in a CD. We will also send a nice see you again email together with a discussion on maintenance package.
+We will send all the source code, design files and any other information to the client using wetransfer.com or slow mail in a CD. We will also send a nice see you again email together with a discussion on maintenance package.
 
 ## Keep Yourself Updated
 We are continuously improving and changing - so is this playbook.
