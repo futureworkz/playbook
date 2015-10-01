@@ -127,26 +127,9 @@ Software requires good brains to create good codes and good processes. Working o
 Dress as you like - nudes are welcome too.
 
 ## Coding Standard
-We have high regards for code quality in Futureworkz. We would rather spend more time to develop a better quality codes than rushing for more codes and for more features.
+We have high regards for code quality in Futureworkz. Code quality affects speed of development, maintainability and coder's happiness.
 
-Our minimum coding standards are:
-###Test driven development
-We don’t have test case for everything but we definitely have test cases to cover critical parts of the application. Test cases ensure that our app is working and without bugs whenever we introduce new features into it. Test cases also gives us the affordance to refactor and improve our code quality. With refactoring, we learn better coding practices and improve ourselves as a coder.
-
-### Don’t Repeat Yourself (DRY)
-We remove any duplications in our code, files and any other relevant stuff. Duplication is a consequence of lazy and untidy coding style. It is a mark of messy mind. We should be disciplined to refactor our code to remove duplications so as to ensure that our code is clean and easy to read.
-
-### Naming Reveals Intention
-Ruby is an amazingly expressive programming language. We avoid using comments in our code and instead, let our code be clear enough to express what it does. Ruby allows us to do this and we should make full use of it. We put deliberation into the naming of our variables, classes, files, methods, etc so that it expresses what it does clearly. This distills our intention in our code and create better quality code.
-
-### Single Responsibility Principle
-Every class and method should only do one thing. We should not lump every logic and responsibility into a God class or a super method. This makes code difficult to understand and hard to change.
-
-### Test Coverage
-Every critical code must be covered with a test case or more. Test case ensures that our app is working. This is even more important when we are collaborating with other developers and making continuous changes to the source code.
-
-### Others
-This is never meant to be an exhaustive list. Code quality is a life-long pursue. We strive to learn more about refactoring, design patterns and workflows to improve our skills.
+To maintain high quality coding standard in our app, we do regular [code review](protocols/code-review/README.md).
 
 ## Problem Resolution
 If stuck, google by yourself for 10 mins.
