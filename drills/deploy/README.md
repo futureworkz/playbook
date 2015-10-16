@@ -1,7 +1,7 @@
 ## Purpose of Deploy.rb
 This document for who using Mina gem at https://github.com/mina-deploy/mina
 
-This document describle how to use 1 deploy.rb file for multible environment.
+This document describe how to use 1 deploy.rb file for multible environment.
 
 ##Install mina gem
 Open gem file, add mina gem in development group
