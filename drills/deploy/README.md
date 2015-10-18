@@ -74,7 +74,7 @@ E.g: mina setting for staging environment
 ##Push code to server
 After finish config, push your code to staging
 
-    $ git remote add your_environment ssh://ec2-user@[your_app_domain]/~/git/[your_app_name].git
+    $ git remote add [your_environment] ssh://ec2-user@[your_app_domain]/~/git/[your_app_name].git
     $ git push your_environment master
 
 E.g:
