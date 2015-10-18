@@ -22,14 +22,6 @@ After installation is finished, run
 ##Initialize Amazon web services for deploy.
 Contact adminstrator to setting up deploy environment on AWS.
 
-##Setting mina for environment
-    
-    $ mina setup to=your_app_environment
-
-E.g: mina setting for staging environment
-    
-    $ mina setup to=staging
-
 ##Setting common config for both Production environment and Staging environment.
 Here are config will be used both in production and staging.
 
@@ -69,6 +61,15 @@ Here are special config for each environment
     set :deploy_to, "/home/#{user}/#{stage}"
 
     invoke :"rvm:use[#{ruby_version}@#{ruby_gemset}]"
+
+##Setting mina for environment
+Apply setting above to each environment
+    
+    $ mina setup to=your_app_environment
+
+E.g: mina setting for staging environment
+    
+    $ mina setup to=staging
 
 ##Push code to server
 After finish config, push your code to staging
