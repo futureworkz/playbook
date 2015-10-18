@@ -31,6 +31,8 @@ E.g: mina setting for staging environment
     $ mina setup to=staging
 
 ##Setting common config for both Production environment and Staging environment.
+Here are config will be used both in production and staging.
+
 Open config/deploy.rb
 
     app               = 'your_app_name'
@@ -48,6 +50,7 @@ Open config/deploy.rb
     set :rvm_path, "/usr/local/rvm/bin/rvm"
 
 ##Setting individual config for each environment
+Here are special config for each environment
 
     stage = ENV['to'] || 'staging'
     case stage
