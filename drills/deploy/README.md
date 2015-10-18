@@ -22,7 +22,7 @@ After installation is finished, run
 ##Initialize Amazon web services for deploy.
 Contact adminstrator to setting up deploy environment on AWS.
 
-#Setting mina for environment
+##Setting mina for environment
     
     $ mina setup to=your_app_environment
 
