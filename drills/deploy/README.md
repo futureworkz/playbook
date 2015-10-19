@@ -44,7 +44,7 @@ Open config/deploy.rb
 ##Setting individual config for each environment
 Here are special config for each environment
 
-    stage = ENV['to'] || 'staging'
+    stage = ENV['to']
     case stage
       when 'staging'
         set :branch, 'master'
@@ -116,7 +116,7 @@ E.g: mina deploy for staging environment
 
     task :environment do
 
-      stage = ENV['to'] || 'staging'
+      stage = ENV['to']
       case stage
         when 'staging'
           set :branch, 'master'
@@ -135,7 +135,6 @@ E.g: mina deploy for staging environment
       invoke :"rvm:use[#{ruby_version}@#{ruby_gemset}]"
 
     end
-
 
     task :setup => :environment do
       queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
