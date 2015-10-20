@@ -2,6 +2,8 @@
 
 We conduct frequent evaluation tests to ensure the standard of our coder. The test is aimed to be completed in 4 hours and covers both frontend and backend development. Generally, the test will be to build single-serving website which is both fun and satisfying.
 
+We generally do the evaluation on a non-working day (eg. Saturday) so that it does not impact client projects. Coder who cannot finish in 4 hours will continue on the project until he finish the basic requirements. This is to ensure that the tester has enough code to evaluate the coder's work.
+
 ## Rules
 Coder will be given a project to code and the code will be the basis of evaluation. Coder is expected to follow the rules below:
 
@@ -106,6 +108,31 @@ The test result of a coder is the lowest grade of 3 aspects.
 > A coder is graded B for speed, B for code quality and C for critical thinking.  
 > The coder test result is C.
 
+The grading basis for the 3 aspects are as below:
+
+```
+Speed
+A – Above 10 points a week
+B – Around 10 points a week
+C – Around 5-8 points a week
+D – Less than 5 points a week
+E – Why did we hire you again?
+
+Code Quality
+A – Above minimum standard
+B – Met all minimum standard
+C – Met some minimum standard
+D – Fail to meet minimum standard
+E – Disappointing standard
+
+Critical Thinking
+A – Solved the problem exceptionally well
+B – Solved the problem well
+C – Workable solution but not ideal
+D – Solution is not workable
+E – Is this even a solution?
+```
+
 ## Coder Rank
 A coder's rank is the lowest grade of the last two evaluation tests.
 
@@ -118,10 +145,10 @@ The next evaluation test for the coder will be based on the coder's rank.
 
 Rank | Re-evaluation Cycle
 -----|------------------------------
-A    | 6 months
-B    | 2 months
-C    | 2 weeks | Not more than 6 RET
-D    | 2 weeks | Not more than 2 RET
+A    | Once every 6 months
+B    | Once every 2 months
+C    | Once every 2 weeks
+D    | Once every 2 weeks
 E    | Immediate
 
 ## Termination
