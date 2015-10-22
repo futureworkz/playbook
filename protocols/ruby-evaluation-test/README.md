@@ -158,10 +158,15 @@ Rank D coders who did not improve to rank C after 2 tests will be considered for
 Rank E coders will be considered for termination immediately.
 
 ## Passing the Test
-Futureworkz wants as many coders to pass the test as possible without affecting the integrity of the test. Here's a compiled list of tips to assist you to improve your test results:
+Futureworkz wants as many coders to pass the test as possible without compromising the integrity of the test. 
+
+A Ruby evaluation test is generally 80% fundamentals and 20% critical thinking. As long as you have a strong foundation in fundamentals, you will be able to pass the test and even aim for an A grade. Hence, you should focus on improving your fundamentals.
+
+Here's a compiled list of tips to assist you to improve your fundamentals:
 
 ### Typing Speed
-If you type very slowly, there is no way you can code fast. Not convinced? Read this: [We Are Typists First, Programmers Second](http://blog.codinghorror.com/we-are-typists-first-programmers-second/)
+If you type very slowly, there is no way you can code fast.  
+Not convinced? Read this: [We Are Typists First, Programmers Second](http://blog.codinghorror.com/we-are-typists-first-programmers-second/)
 
 The speed of typing is determined by words per minute (WPM).  
 For a coder, your typing speed should be at least 40 WPM.  
@@ -175,13 +180,13 @@ Next, you can learn touch typing at http://www.ratatype.com/
 
 You know you can touch type (even though at a very low WPM) when you can type with all 10 fingers and you do not look at the keyboard at all when you type.
 
-#### Practice, Practice, Practice
+#### Practise, Practise, Practise
 Once you know how to touch type, set aside 10 minutes every morning or evening to practise. You will be amazed how fast you will improve in just one month! 
 
 Here's a list of websites you can use to practise:
 
-Website | Link | Description
---------|------|------------
+Website    | Link                       | Description
+-----------|----------------------------|---------------------------------
 Type Racer | http://play.typeracer.com/ | Simple fun website to test your typing against other players
 Key Hero   | http://www.keyhero.com/    | Another site like Type Racer
 Typing.io  | http://typing.io           | Typing test is based on real codes! Please note that your WPM will drop as real code has more special characters than normal English text
@@ -232,17 +237,11 @@ A list of common things to create a cheatsheet for:
 - ActiveRecord validation
 - Common Rails methods such as view helpers, routes, etc
 
-### Practice on Previous Test Again
-You can redo your previous test from scratch again. This way, you will get to practice every thing again. The more time you do it, the faster you will become. You also memorize the fundamentals very quickly.
+### Practise Drills
+[Futureworkz drills](../drills/README.md) are common coding conventions and practices we adopted in every development project. Ruby evaluation test requires the same coding standard as drills. You should be familiar with all Futureworkz drills and able to do them without thinking or referencing.
 
-### Drills
-- Drills
--- project setup (RVM)
--- migration + db seed
--- model + rspec
--- controller + rspec
--- view + capybara
--- HTML
--- CSS
--- JS (graceful degradation)
--- git commits
+A good way to practice is to repeat a drill for at least 5 times or until you are able to do the drill purely from memory.
+
+### Practise on Previous Test Again
+You can redo your previous test from scratch again.  
+This way, you will get to practice everything again. 
