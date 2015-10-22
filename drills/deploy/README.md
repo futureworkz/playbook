@@ -1,56 +1,63 @@
-## Purpose of Deploy.rb
-This document for who using Mina gem at https://github.com/mina-deploy/mina
+# Mina
+Really fast deployer and server automation tool.
 
-This document describe how to use 1 deploy.rb file for multible environment.
+Mina works really fast because it's a deploy Bash script generator. It generates an entire procedure as a Bash script and runs it remotely in the server.
 
-##Install mina gem
-Open gem file, add mina gem in development group
+Read more: https://github.com/mina-deploy/mina
 
-    group :development do
-      gem 'mina'
-    end
-    
-Then, open terminal, install it
+## How to config to use it with multi environment?
 
-    $ bundle install
+### Step 1: Install Mina
+```ruby
+  group :development do
+    gem 'mina'
+  end
+```
 
-After installation is finished, run
+### Step 2: Create a config/deploy.rb
+In your project, type mina init to create a sample of this file.
+```ruby
+  $ mina init
+  Created config/deploy.rb.
+```
 
-    $ mina init
-    Created config/deploy.rb.
+### Step 3: Setup your server on AWS
 
-##Initialize Amazon web services for deploy.
-Contact adminstrator to setting up deploy environment on AWS.
-
-##Setting common config for both Production environment and Staging environment.
-Here are config will be used both in production and staging.
+### Step 4: Pre-deployment
+Let's open config/deploy.rb and configure the server for both production and staging environment. This is a Rakefile invoked by Rake. We have to configure the server and define tasks that we later invoke using mina.
 
 Open config/deploy.rb
+```ruby
+  require 'mina/bundler'
+  require 'mina/rails'
+  require 'mina/git'
+  require 'mina/rvm'
 
-    app               = 'your_app_name'
-    production_domain = 'your_app_production_domain'
-    staging_domain    = 'your_app_staging_domain'
-    user              = 'ec2-user'
-    ruby_version      = 'your_app_ruby_version'
-    ruby_gemset       = 'your_app_gemset'
+  app               = 'your_app_name'
+  production_domain = 'production.com'
+  staging_domain    = 'staging.com'
+  user              = 'ec2-user'
+  ruby_version      = 'ruby-2.x.x'
+  ruby_gemset       = 'your_app_gemset'
 
-    set :term_mode, nil
-    set :shared_paths, ['config/database.yml', 'log']
-    set :app, app
-    set :repository, "ssh://#{user}@#{domain}/~/git/#{app}.git"
-    set :user, user
-    set :rvm_path, "/usr/local/rvm/bin/rvm"
+  set :term_mode, nil
+  set :shared_paths, ['config/database.yml', 'log']
+  set :app, app
+  set :repository, "ssh://#{user}@#{domain}/~/git/#{app}.git"
+  set :user, user
+  set :rvm_path, "/usr/local/rvm/bin/rvm"
 
-##Setting individual config for each environment
-Here are special config for each environment
-
+  # This task is the environment that is loaded for most commands, such as
+  # `mina deploy` or `mina rake`.
+  
+  task :environment do
     stage = ENV['to']
     case stage
       when 'staging'
-        set :branch, 'master'
+        set :branch, 'staging' # Staging uses staging branch
         set :domain, staging_domain
       when 'production'
-        set :branch, 'master'
+        set :branch, 'master'  # Production uses master branch
         set :domain, production_domain
       else
         print_error "Please specify a stage. eg. mina deploy to=production"
@@ -61,111 +68,53 @@ Here are special config for each environment
     set :deploy_to, "/home/#{user}/#{stage}"
 
     invoke :"rvm:use[#{ruby_version}@#{ruby_gemset}]"
+  end
 
-##Setting mina for environment
-Apply setting above to each environment
-    
-    $ mina setup to=your_app_environment
+  task :setup => :environment do
+    queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
+    queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
 
-E.g: mina setting for staging environment
-    
-    $ mina setup to=staging
+    queue! %[mkdir -p "#{deploy_to}/#{shared_path}/config"]
+    queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/config"]
 
-##Push code to server
-After finish config, push your code to staging
+    queue! %[touch "#{deploy_to}/#{shared_path}/config/database.yml"]
+    queue  %[echo "-----> Be sure to edit '#{deploy_to}/#{shared_path}/config/database.yml'."]
+  end
 
-    $ git remote add [your_environment] ssh://ec2-user@[your_app_domain]/~/git/[your_app_name].git
-    $ git push your_environment master
+  desc "Deploys the current version to the server."
+  task :deploy => :environment do
+    deploy do
+      invoke :'git:clone'
+      invoke :'deploy:link_shared_paths'
+      invoke :'bundle:install'
+      invoke :'rails:db_migrate'
+      invoke :'rails:assets_precompile'
+      invoke :'deploy:cleanup'
 
-E.g:
-
-For staging environment
-
-    $ git remote add staging ssh://ec2-user@[your_app_domain]/~/git/[your_app_name].git
-    $ git push staging master
-
-
-#Finish deploy
-
-    $ mina deploy to=your_app_environment
-
-E.g: mina deploy for staging environment
-    
-    $ mina deploy to=staging
-
-##Full mina deploy script
-
-    require 'mina/bundler'
-    require 'mina/rails'
-    require 'mina/git'
-    require 'mina/rvm'
-
-    app               = 'your_app_name'
-    production_domain = 'your_app_production_domain'
-    staging_domain    = 'your_app_staging_domain'
-    user              = 'ec2-user'
-    ruby_version      = 'your_app_ruby_version'
-    ruby_gemset       = 'your_app_gemset'
-
-    set :term_mode, nil
-    set :shared_paths, ['config/database.yml', 'log']
-    set :app, app
-    set :repository, "ssh://#{user}@#{domain}/~/git/#{app}.git"
-    set :user, user
-    set :rvm_path, "/usr/local/rvm/bin/rvm"
-
-    task :environment do
-
-      stage = ENV['to']
-      case stage
-        when 'staging'
-          set :branch, 'master'
-          set :domain, staging_domain
-        when 'production'
-          set :branch, 'master'
-          set :domain, production_domain
-        else
-          print_error "Please specify a stage. eg. mina deploy to=production"
-          exit
-      end
-
-      set :rails_env, stage
-      set :deploy_to, "/home/#{user}/#{stage}"
-
-      invoke :"rvm:use[#{ruby_version}@#{ruby_gemset}]"
-
-    end
-
-    task :setup => :environment do
-      queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
-      queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
-
-      queue! %[mkdir -p "#{deploy_to}/#{shared_path}/config"]
-      queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/config"]
-
-      queue! %[touch "#{deploy_to}/#{shared_path}/config/database.yml"]
-      queue  %[echo "-----> Be sure to edit '#{deploy_to}/#{shared_path}/config/database.yml'."]
-    end
-
-    desc "Deploys the current version to the server."
-    task :deploy => :environment do
-      deploy do
-        invoke :'git:clone'
-        invoke :'deploy:link_shared_paths'
-        invoke :'bundle:install'
-        invoke :'rails:db_migrate'
-        invoke :'rails:assets_precompile'
-        invoke :'deploy:cleanup'
-
-        to :launch do
-          queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
-          queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
-        end
+      to :launch do
+        queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
+        queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
       end
     end
+  end
 
-    task :restart do
-      queue "#{settings.nginx_path!} restart"
-    end
+  task :restart do
+    queue "#{settings.nginx_path!} restart"
+  end
+```
 
+### Step 5: Run 'mina setup'
+```ruby  
+  $ mina setup to=[your_app_environment]
+```
 
+### Step 6: Push code from your local repository to server
+```ruby
+  $ git remote add [your_environment] ssh://ec2-user@[your_app_domain]/~/git/[your_app_name].git
+  $ git push [your_environment] master
+```
+
+### Step 7: Deploy!
+```ruby
+  $ mina deploy to=[your_app_environment]
+```
