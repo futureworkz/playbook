@@ -218,13 +218,22 @@ Text           |`CMD` + `down`        | Move cursor to bottom/end of document
 
 You should have a habit of finding keyboard shortcuts in the common things that you do and train yourself to use it. This way, you will become faster over time.
 
-### Cheatsheet
--- rspec (model, controller, capybara)
--- project setup
--- model validation
--- controller render/etc
+### Cheatsheets
+There are many things which you will perform over and over again in every test and in every project. Create your own cheatsheet helps you to reference the information you need quickly.
 
-### Practice on previous test again
+When you write your own cheatsheet, you help yourself to remember that exact information better. Furthermore, you will find that information faster when you need it (because you wrote it!)
+
+You can create your own cheatsheet using pen and paper/book or using online websites like [Github Gists](https://gist.github.com/), [GistBoxApp](http://www.gistboxapp.com), [Trello](http://www.trello.com), etc.
+
+A list of common things to create a cheatsheet for:
+- Command line commands
+- Common RSpec code for model/controller/etc
+- Project setup
+- ActiveRecord validation
+- Common Rails methods such as view helpers, routes, etc
+
+### Practice on Previous Test Again
+You
 
 ### Drills
 - Drills
