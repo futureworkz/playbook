@@ -1,5 +1,4 @@
 # Ruby Evaluation Test
-
 We conduct frequent evaluation tests to ensure the standard of our coder. The test is aimed to be completed in 4 hours and covers both frontend and backend development. Generally, the test will be to build single-serving website which is both fun and satisfying.
 
 We generally do the evaluation on a non-working day (eg. Saturday) so that it does not impact client projects. Coder who cannot finish in 4 hours will continue on the project until he finish the basic requirements. This is to ensure that the tester has enough code to evaluate the coder's work.
@@ -157,3 +156,84 @@ Futureworkz will only keep rank A and B coders.
 Rank C coders who did not improve to rank B after 6 tests will be considered for termination.  
 Rank D coders who did not improve to rank C after 2 tests will be considered for termination.  
 Rank E coders will be considered for termination immediately.
+
+## Passing the Test
+Futureworkz wants as many coders to pass the test as possible without affecting the integrity of the test. Here's a compiled list of tips to assist you to improve your test results:
+
+### Typing Speed
+If you type very slowly, there is no way you can code fast. Not convinced? Read this: [We Are Typists First, Programmers Second](http://blog.codinghorror.com/we-are-typists-first-programmers-second/)
+
+The speed of typing is determined by words per minute (WPM).  
+For a coder, your typing speed should be at least 40 WPM.  
+Great coders generally clock more than 60 WPM.  
+You should strive to at least reach 50 WPM.
+
+#### Touch Typing
+To start typing fast, make sure you know the fundamentals of touch typing. Touch typing is being able to type without looking at your keyboard. See wikipedia definition: https://en.wikipedia.org/wiki/Touch_typing
+
+Next, you can learn touch typing at http://www.ratatype.com/  
+
+You know you can touch type (even though at a very low WPM) when you can type with all 10 fingers and you do not look at the keyboard at all when you type.
+
+#### Practice, Practice, Practice
+Once you know how to touch type, set aside 10 minutes every morning or evening to practise. You will be amazed how fast you will improve in just one month! 
+
+Here's a list of websites you can use to practise:
+
+Website | Link | Description
+--------|------|------------
+Type Racer | http://play.typeracer.com/ | Simple fun website to test your typing against other players
+Key Hero   | http://www.keyhero.com/    | Another site like Type Racer
+Typing.io  | http://typing.io           | Typing test is based on real codes! Please note that your WPM will drop as real code has more special characters than normal English text
+
+### Keyboard Productivity
+Beyond typing fast, knowing a lot of keyboard shortcuts dramatically improves your coding speed. Train yourself to use important keyboard shortcuts until it becomes muscle memory.
+
+Here's a list of essential keyboard shortcuts in Mac:
+
+Environment    | Keys                 | Description
+---------------|----------------------|----------------------------------
+Mac            |`CMD` + `space`       | Display spotlight
+Mac            |`CMD` + `tab`         | Jump to next app
+Mac            |`CMD` + `n`           | New window/file in most app
+Browser        |`CMD` + `t`           | Open a new tab
+Browser        |`CMD` + `r`           | Reloads the page
+Browser        |`backspace`           | Go back to previous page
+Browser        |`Ctrl` + `tab`        | Go to next tab
+Text           |`CMD` + `Z`           | Undo last operation 
+Text           |`CMD` + `Y`           | Redo last operation
+Text           |`CMD` + `O`           | Open file 
+Text           |`CMD` + `S`           | Save 
+Text           |`CMD` + `W`           | Close active window or file
+Text           |`CMD` + `Q`           | Quit application
+Text           |`CMD` + `A`           | Select all in active window; e.g., select all text on page
+Text           |`CMD` + `X`           | Cut to clipboard
+Text           |`CMD` + `C`           | Copy
+Text           |`CMD` + `V`           | Paste
+Text           |`CMD` + `F`           | Find
+Text           |`CMD` + `Shift` + `right` | Select until end of line
+Text           |`CMD` + `Shift` + `left`  | Select until beginning of line 
+Text           |`CMD` + `up`          | Move cursor to top/start of document
+Text           |`CMD` + `down`        | Move cursor to bottom/end of document
+
+You should have a habit of finding keyboard shortcuts in the common things that you do and train yourself to use it. This way, you will become faster over time.
+
+### Cheatsheet
+-- rspec (model, controller, capybara)
+-- project setup
+-- model validation
+-- controller render/etc
+
+### Practice on previous test again
+
+### Drills
+- Drills
+-- project setup (RVM)
+-- migration + db seed
+-- model + rspec
+-- controller + rspec
+-- view + capybara
+-- HTML
+-- CSS
+-- JS (graceful degradation)
+-- git commits
