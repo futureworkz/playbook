@@ -233,7 +233,7 @@ A list of common things to create a cheatsheet for:
 - Common Rails methods such as view helpers, routes, etc
 
 ### Practice on Previous Test Again
-You
+You can redo your previous test from scratch again. This way, you will get to practice every thing again. The more time you do it, the faster you will become. You also memorize the fundamentals very quickly.
 
 ### Drills
 - Drills
