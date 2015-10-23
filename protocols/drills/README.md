@@ -10,6 +10,11 @@ Drills that are work in progress:
 - Rails model
 - Rails controller
 - Rails view
+- Heroku deployment
+
+- AWS deployment
 - HTML standard
 - CSS standard
 - Javascript standard
+- Common Ruby idioms
+- Common Rails idioms

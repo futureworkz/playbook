@@ -129,7 +129,7 @@ Dress as you like - nudes are welcome too.
 ## Coding Standard
 We have high regards for code quality in Futureworkz. Code quality affects speed of development, maintainability and coder's happiness.
 
-To maintain high quality coding standard in our app, we do regular [code review](protocols/code-review/README.md).
+To maintain high quality coding standard in our app, we do regular [code review](protocols/code-review/README.md). We also conduct a [Ruby evaluation test](protocols/ruby-evaluation-test/README.md) every alternate Saturday 9am.
 
 ## Problem Resolution
 If stuck, google by yourself for 10 mins.
