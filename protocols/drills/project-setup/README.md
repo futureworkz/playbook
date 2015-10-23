@@ -23,13 +23,16 @@ $ cd .
 ```
 
 Please use the latest (or second latest) stable version of Ruby.  
+The gemset name is normally chosen as the project name.  
 You need to do the last step `cd .` so that RVM will create your gemset.
 
 ## Install Rails
 ```sh
 $ gem install rails --no-rdoc --no-ri
-$ rails new .
+$ rails new . -T -d=postgresql
 ```
+
+The options `-T` and `-d=postgresql` will remove the test folder and set the database to be postgres respectively.
 
 ## Edit .gitignore
 Add the following git ignore rules in your `.gitignore` file.  
@@ -45,13 +48,6 @@ Alternatively, you can add the following in your [global git ignore file](http:/
 # Ignore VIM swp files if you use VIM
 *.swp
 *.swo
-```
-
-## Remove the /test folder
-We keep our code base DRY and remove all un-necessary files and folder.
-
-```sh
-$ rm -rf test
 ```
 
 ## Install RSpec and gems
