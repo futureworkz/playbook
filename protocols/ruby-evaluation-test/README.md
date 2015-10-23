@@ -1,5 +1,4 @@
 # Ruby Evaluation Test
-
 We conduct frequent evaluation tests to ensure the standard of our coder. The test is aimed to be completed in 4 hours and covers both frontend and backend development. Generally, the test will be to build single-serving website which is both fun and satisfying.
 
 We generally do the evaluation on a non-working day (eg. Saturday) so that it does not impact client projects. Coder who cannot finish in 4 hours will continue on the project until he finish the basic requirements. This is to ensure that the tester has enough code to evaluate the coder's work.
@@ -157,3 +156,92 @@ Futureworkz will only keep rank A and B coders.
 Rank C coders who did not improve to rank B after 6 tests will be considered for termination.  
 Rank D coders who did not improve to rank C after 2 tests will be considered for termination.  
 Rank E coders will be considered for termination immediately.
+
+## Passing the Test
+Futureworkz wants as many coders to pass the test as possible without compromising the integrity of the test. 
+
+A Ruby evaluation test is generally 80% fundamentals and 20% critical thinking. As long as you have a strong foundation in fundamentals, you will be able to pass the test and even aim for an A grade. Hence, you should focus on improving your fundamentals.
+
+Here's a compiled list of tips to assist you to improve your fundamentals:
+
+### Typing Speed
+If you type very slowly, there is no way you can code fast.  
+Not convinced? Read this: [We Are Typists First, Programmers Second](http://blog.codinghorror.com/we-are-typists-first-programmers-second/)
+
+The speed of typing is determined by words per minute (WPM).  
+For a coder, your typing speed should be at least 40 WPM.  
+Great coders generally clock more than 60 WPM.  
+You should strive to at least reach 50 WPM.
+
+#### Touch Typing
+To start typing fast, make sure you know the fundamentals of touch typing. Touch typing is being able to type without looking at your keyboard. See wikipedia definition: https://en.wikipedia.org/wiki/Touch_typing
+
+Next, you can learn touch typing at http://www.ratatype.com/  
+
+You know you can touch type (even though at a very low WPM) when you can type with all 10 fingers and you do not look at the keyboard at all when you type.
+
+#### Practise, Practise, Practise
+Once you know how to touch type, set aside 10 minutes every morning or evening to practise. You will be amazed how fast you will improve in just one month! 
+
+Here's a list of websites you can use to practise:
+
+Website    | Link                       | Description
+-----------|----------------------------|---------------------------------
+Type Racer | http://play.typeracer.com/ | Simple fun website to test your typing against other players
+Key Hero   | http://www.keyhero.com/    | Another site like Type Racer
+Typing.io  | http://typing.io           | Typing test is based on real codes! Please note that your WPM will drop as real code has more special characters than normal English text
+
+### Keyboard Productivity
+Beyond typing fast, knowing a lot of keyboard shortcuts dramatically improves your coding speed. Train yourself to use important keyboard shortcuts until it becomes muscle memory.
+
+Here's a list of essential keyboard shortcuts in Mac:
+
+Environment    | Keys                 | Description
+---------------|----------------------|----------------------------------
+Mac            |`CMD` + `space`       | Display spotlight
+Mac            |`CMD` + `tab`         | Jump to next app
+Mac            |`CMD` + `n`           | New window/file in most app
+Browser        |`CMD` + `t`           | Open a new tab
+Browser        |`CMD` + `r`           | Reloads the page
+Browser        |`backspace`           | Go back to previous page
+Browser        |`Ctrl` + `tab`        | Go to next tab
+Text           |`CMD` + `Z`           | Undo last operation 
+Text           |`CMD` + `Y`           | Redo last operation
+Text           |`CMD` + `O`           | Open file 
+Text           |`CMD` + `S`           | Save 
+Text           |`CMD` + `W`           | Close active window or file
+Text           |`CMD` + `Q`           | Quit application
+Text           |`CMD` + `A`           | Select all in active window; e.g., select all text on page
+Text           |`CMD` + `X`           | Cut to clipboard
+Text           |`CMD` + `C`           | Copy
+Text           |`CMD` + `V`           | Paste
+Text           |`CMD` + `F`           | Find
+Text           |`CMD` + `Shift` + `right` | Select until end of line
+Text           |`CMD` + `Shift` + `left`  | Select until beginning of line 
+Text           |`CMD` + `up`          | Move cursor to top/start of document
+Text           |`CMD` + `down`        | Move cursor to bottom/end of document
+
+You should have a habit of finding keyboard shortcuts in the common things that you do and train yourself to use it. This way, you will become faster over time.
+
+### Cheatsheets
+There are many things which you will perform over and over again in every test and in every project. Create your own cheatsheet helps you to reference the information you need quickly.
+
+When you write your own cheatsheet, you help yourself to remember that exact information better. Furthermore, you will find that information faster when you need it (because you wrote it!)
+
+You can create your own cheatsheet using pen and paper/book or using online websites like [Github Gists](https://gist.github.com/), [GistBoxApp](http://www.gistboxapp.com), [Trello](http://www.trello.com), etc.
+
+A list of common things to create a cheatsheet for:
+- Command line commands
+- Common RSpec code for model/controller/etc
+- Project setup
+- ActiveRecord validation
+- Common Rails methods such as view helpers, routes, etc
+
+### Practise Drills
+[Futureworkz drills](../drills/README.md) are common coding conventions and practices we adopted in every development project. Ruby evaluation test requires the same coding standard as drills. You should be familiar with all Futureworkz drills and able to do them without thinking or referencing.
+
+A good way to practice is to repeat a drill for at least 5 times or until you are able to do the drill purely from memory.
+
+### Practise on Previous Test Again
+You can redo your previous test from scratch again.  
+This way, you will get to practice everything again. 

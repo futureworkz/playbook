@@ -129,7 +129,7 @@ Dress as you like - nudes are welcome too.
 ## Coding Standard
 We have high regards for code quality in Futureworkz. Code quality affects speed of development, maintainability and coder's happiness.
 
-To maintain high quality coding standard in our app, we do regular [code review](protocols/code-review/README.md).
+To maintain high quality coding standard in our app, we do regular [code review](protocols/code-review/README.md). We also conduct a [Ruby evaluation test](protocols/ruby-evaluation-test/README.md) every alternate Saturday 9am.
 
 ## Problem Resolution
 If stuck, google by yourself for 10 mins.
@@ -169,7 +169,7 @@ Ideally, the product owner should be available via mobile or online during devel
 
 The product owner is expected to:
 - Clarify requirements
-- Test and approve/reject developed stories/design
+- Test and approve/reject developed stories/design in [Pivotal Tracker](guides/pivotal-tracker/README.md)
 - Guide us in decisions on the app business direction
 
 We believe client should know how to manage their own IT assets so we require the product owner to register any needed services by themselves such as Amazon Web Services, Google Analytics, etc.
