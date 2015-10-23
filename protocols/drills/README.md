@@ -1,10 +1,10 @@
 # Drills
 Drills are a set of standard coding conventions we follow in Futureworkz. It defines the conventions and common practices we adopted in every project. We develop all projects based on this set of drills so that coding is aligned and co-development is easy.
 
-List of drills:
+## List of Drills
+- [Project setup](project-setup/README.md)
 
-Drills that are work in progress:
-- Project setup
+## Upcoming Drills
 - Git
 - Database migration
 - Rails model
