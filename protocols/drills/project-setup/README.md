@@ -68,7 +68,8 @@ end
 ```
 
 After bundle, you need to run `rails generate rspec:install` for rspec gem.  
-You also need to add `require 'capybara/rails'` to your `/spec/rails_helper.rb`.
+You also need to add `require 'capybara/rails'` to your `/spec/rails_helper.rb`.  
+You also need to add `config.include FactoryGirl::Syntax::Methods` to your `/spec/rails_helper.rb`.
 
 ## Setup Git
 We use [Gitlab](http://gitlab.com) as a remote repository to store our code.  
