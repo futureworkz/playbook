@@ -131,6 +131,19 @@ We have high regards for code quality in Futureworkz. Code quality affects speed
 
 To maintain high quality coding standard in our app, we do regular [code review](protocols/code-review/README.md). We also conduct a [Ruby evaluation test](protocols/ruby-evaluation-test/README.md) every alternate Saturday 9am.
 
+## Coder Development Education
+We view the education of our coders seriously.
+
+Coder in Futureworkz starts with getting familiar with our [drills](protocols/drills/README.md). Through practicing our drills, coder understands Futureworkz coding standards and practices.
+
+Futureworkz adopts a [code review](protocols/code-review/README.md) practice for all development work. Coder will learn, teach and reinenforce best coding standards through the code review sessions with each other.
+
+Tea break presentations happens on every Monday, Wednesday and Friday during the tea break (320PM to 340PM). Tea break presentations are short 20 mins Ruby presentations where all coders learn from each other on Ruby knowledge.
+
+Futureworkz hosts the [Saigon.rb Ruby meetup](http://www.meetup.com/saigon-rb/) in our office on the first Tuesday of every month. We see it as a way to give back to the Ruby community as well as another learning channel for our coders.
+
+Finally, we evaluate the improvement and development of our coders through our [Ruby evaluation test](protocols/ruby-evaluation-test/README.md). Evaluation shows the improvements in our coder's education in Futureworkz.
+
 ## Problem Resolution
 If stuck, google by yourself for 10 mins.
 If no solution found, ask someone.
