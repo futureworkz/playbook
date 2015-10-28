@@ -1,4 +1,4 @@
-# Mina
+# AWS Deployment using Mina
 Really fast deployer and server automation tool.
 
 Mina works really fast because it's a deploy Bash script generator. It generates an entire procedure as a Bash script and runs it remotely in the server.
