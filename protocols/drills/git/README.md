@@ -35,6 +35,13 @@ Once the feature is completed, we will push it to remote and then create a merge
 
 If a project does not have a production site, we will not use staging branch and instead, treat master branch as the staging branch. This is for productivity as it is pointless to merge into staging and then into master again when there is no staging site.
 
+## Pull Request/Merge Request
+We practice using pull request in Github or merge request in Gitlab to send in code for new features. [Code review](../../code-review/README.md) is done on the request before merging into the master.
+
+## Common Git Practices
+- Large number of files that are added to the project such as `rails new .` or adding bootstrap CSS files always goes into a commit. This separates the external code from our own developed code.
+- When we created a rails project (eg. after we run `rails new .`), we always commit the Rails generated files as `Initial commit`
+
 ## How to practise this drill?
 - Find a project to do that is simple such as [this](https://github.com/futureworkz/rails-test-1)
 - Setup your own Gitlab repository for this project
