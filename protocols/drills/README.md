@@ -11,6 +11,7 @@ We develop all projects based on this set of drills so that coding is aligned an
 - [Rails Model](rails-model/README.md)
 - [Rails Controller](rails-controller/README.md)
 - [Rails View](rails-view/README.md)
+- [RSpec Tests](rspec-tests/README.md)
 - [AWS Deployment](aws-deployment/README.md)
 - [Heroku Deployment](heroku-deployment/README.md)
 - [HTML Standard](html-standard/README.md)
