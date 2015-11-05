@@ -10,13 +10,13 @@ We develop all projects based on this set of drills so that coding is aligned an
 - [Database migration](database-migration/README.md)
 - [Rails model](rails-model/README.md)
 - [Rails controller](rails-controller/README.md)
+- [Rails view](rails-view/README.md)
 - [AWS Deployment](aws-deployment/README.md)
 - [Heroku deployment](heroku-deployment/README.md)
+- [HTML standard](html-standard/README.md)
+- [CSS standard](css-standard/README.md)
+- [Javascript standard](javascript-standard/README.md)
 
 ## Upcoming Drills
-- Rails view
-- HTML standard
-- CSS standard
-- Javascript standard
 - Common Ruby idioms
 - Common Rails idioms
