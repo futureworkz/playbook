@@ -9,9 +9,9 @@ We develop all projects based on this set of drills so that coding is aligned an
 - [Git](git/README.md)
 - [AWS Deployment](aws-deployment/README.md)
 - [Database migration](database-migration/README.md)
+- [Rails model](rails-model/README.md)
 
 ## Upcoming Drills
-- Rails model
 - Rails controller
 - Rails view
 - Heroku deployment
