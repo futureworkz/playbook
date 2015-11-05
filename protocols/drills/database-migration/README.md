@@ -22,29 +22,12 @@ Examples of development data are admin accounts, sample product data, etc. This 
 
 If we have production data and development data, we can separate them easily from this [tip](http://dennisreimann.de/blog/seeds-for-different-environments/).
 
+### Making db:seed indempotent
 Db seed must be [idempotent](https://en.wikipedia.org/wiki/Idempotence). In simple terms, it means that one can run `rake db:seed` many times but the data is not repeated in the database.
 
-### Making db:seed indempotent
-The easiest way is to simply delete all records and then create them again:
+Futureworkz's recommended practise is to use [`#first_or_create`](http://apidock.com/rails/ActiveRecord/Relation/first_or_create):
 ```ruby
 # db/seeds.rb
-Product.destroy_all
-Category.destroy_all
-
-book_category = Category.create!(title: 'Books')
-stationary_category = Category.create!(title: 'Stationary')
-Product.create!(title: 'Ruby book', price: 12.99, category: book_category)
-Product.create!(title: 'Pen', price: 2.99, category: stationary_category)
-```
-
-Obviously, the above approach will not work if there are other data especially in production environment.
-
-Futureworkz's recommended practise is to [`first_or_create`](http://apidock.com/rails/ActiveRecord/Relation/first_or_create):
-```ruby
-# db/seeds.rb
-Product.destroy_all
-Category.destroy_all
-
 book_category = Category.where(title: 'Books').first_or_create!(title: 'Books')
 stationary_category = Category.where(title: 'Stationary').first_or_create!(title: 'Stationary')
 Product.where(title: 'Ruby book').first_or_create!(title: 'Ruby book', price: 12.99, category: book_category)
