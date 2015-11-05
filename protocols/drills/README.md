@@ -16,7 +16,5 @@ We develop all projects based on this set of drills so that coding is aligned an
 - [HTML Standard](html-standard/README.md)
 - [CSS Standard](css-standard/README.md)
 - [Javascript Standard](javascript-standard/README.md)
-
-## Upcoming Drills
-- Common Ruby idioms
-- Common Rails idioms
+- [Ruby idioms](ruby-idioms/README.md)
+- [Rails idioms](rails-idioms/README.md)
