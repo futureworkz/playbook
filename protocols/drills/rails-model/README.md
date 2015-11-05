@@ -23,11 +23,19 @@ Read about [ActiveRecord Association](http://guides.rubyonrails.org/association_
 Note that it is very important to validate association too, not just data.
 
 ## Business Logic
+Model also provide methods for other object to access the data that must be restricted by the application business rules and logic.
+
+## Common Refactoring of Models
 We generally keep to the 'skinny controllers, fat models' thinking.
 However, making our models too fat results in unreadable code.
 
 Business logic in model can be encapsulated in [ActiveRecord callbacks](Active Record Callbacks).
-We also use [ActiveRecord concerns](http://api.rubyonrails.org/classes/ActiveSupport/Concern.html) to extract methods into concerns.
+Alternatively, we can use [ActiveRecord Observer](https://github.com/rails/rails-observers) to better separate the logic.
+
+We also use [ActiveSupport concerns](http://api.rubyonrails.org/classes/ActiveSupport/Concern.html) to extract methods into concerns.
+
+Multiple associations usually leads to code smell that violate [law of demeter](https://en.wikipedia.org/wiki/Law_of_Demeter). 
+We can use [delegate](http://samurails.com/tutorial/rails-delegate-dont-break-the-law-of-demeter/) to prevent such code smell.
 
 ## Testing Models
 We use the [gem shoulda](https://github.com/thoughtbot/shoulda) to test our models validation rules.
