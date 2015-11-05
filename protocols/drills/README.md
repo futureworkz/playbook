@@ -7,15 +7,15 @@ We develop all projects based on this set of drills so that coding is aligned an
 - [Laptop Setup](laptop-setup/README.md)
 - [Project Setup](project-setup/README.md)
 - [Git](git/README.md)
-- [Database migration](database-migration/README.md)
-- [Rails model](rails-model/README.md)
-- [Rails controller](rails-controller/README.md)
-- [Rails view](rails-view/README.md)
+- [Database Migration](database-migration/README.md)
+- [Rails Model](rails-model/README.md)
+- [Rails Controller](rails-controller/README.md)
+- [Rails View](rails-view/README.md)
 - [AWS Deployment](aws-deployment/README.md)
-- [Heroku deployment](heroku-deployment/README.md)
-- [HTML standard](html-standard/README.md)
-- [CSS standard](css-standard/README.md)
-- [Javascript standard](javascript-standard/README.md)
+- [Heroku Deployment](heroku-deployment/README.md)
+- [HTML Standard](html-standard/README.md)
+- [CSS Standard](css-standard/README.md)
+- [Javascript Standard](javascript-standard/README.md)
 
 ## Upcoming Drills
 - Common Ruby idioms
