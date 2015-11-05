@@ -7,14 +7,14 @@ We develop all projects based on this set of drills so that coding is aligned an
 - [Laptop Setup](laptop-setup/README.md)
 - [Project Setup](project-setup/README.md)
 - [Git](git/README.md)
-- [AWS Deployment](aws-deployment/README.md)
 - [Database migration](database-migration/README.md)
 - [Rails model](rails-model/README.md)
 - [Rails controller](rails-controller/README.md)
+- [AWS Deployment](aws-deployment/README.md)
+- [Heroku deployment](heroku-deployment/README.md)
 
 ## Upcoming Drills
 - Rails view
-- Heroku deployment
 - HTML standard
 - CSS standard
 - Javascript standard
