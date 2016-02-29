@@ -1,20 +1,10 @@
 # Code Review Practice
 This protocol states how we do code review in Futureworkz.
 
-## Code Review Buddy System
-Coder      | Coder
------------|---------
-Chacharoti | Yunchang
-Billy      | Brian
-Oliver     | Smith
-James      | Robin
-Wayne      | Theo
+## Code Review System
+Every coder must have another coder to review his code. This ensures high quality on the code deployed to production and also maximise learning for the coder and the reviewer.
 
-The assigned coder buddy will be the first coder to approach for code review eg. Billy will find Brian first for code review.
-
-In the event where the coder buddy is unavailable, the coder will find either of the two coders in the next row eg. Billy will find Oliver or Smith if Brian is unavailable. Wayne will find Chacharoti or Yunchang if Theo is unavailable.
-
-In the event where the secondary reviewers are not available, the coder can find anyone to review his code.
+To know your assigned coder to review your code, please ask James.
 
 ## What to Review
 We code review everything including bug fixes, HTML/CSS/JS and of course, feature development.
