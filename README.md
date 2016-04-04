@@ -96,6 +96,12 @@ Primary main responsibilities:
 - To ensure project development is on track
 - To resolve project development conflicts
 
+James is the Lead Software Engineer of Futureworkz.
+Primary main responsibilities:
+- To guide & support the technical aspects of projects
+- To support the continuous education of coders
+- To push new technologies adoption in Futureworkz
+
 ## Project Engagement Rule
 Futureworkz will only engage a project if
 - the project will enhance our reputation in the industry
