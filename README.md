@@ -106,7 +106,7 @@ Primary main responsibilities:
 Futureworkz will only engage a project if
 - the project will enhance our reputation in the industry
 - the project enhance our knowledge capital in terms of implementing new technologies
-- the project pays us at least SGD 3000 per week
+- the project is profitable to the company
 
 ## Project Development and Management
 We use Agile eXtreme Programming (XP) to run our projects.
